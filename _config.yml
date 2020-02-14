@@ -1,6 +1,6 @@
 permalink: /:year:month:day/:title
 url: http://eranws.github.io/windows-95
-baseurl: /
+# baseurl: /
 
 # variables
 name: Weissencorp

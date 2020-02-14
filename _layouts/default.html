@@ -12,7 +12,7 @@
 			{% if page.title == 'me' or page.title == '404...' %}
 			<ul>
 				{% for post in site.posts %}
-				<li><a href="{{  post.url }}" title="{{ post.title }}"><img src="/assets/img/file.ico"
+				<li><a href="{{  post.url }}" title="{{ post.title }}"><img src="{{site.baseurl}}/assets/img/file.ico"
 							title="{{ post.title }}" />{{ post.title }}</a></li>
 				{% endfor %}
 			</ul>
@@ -22,7 +22,7 @@
 			{% else %}
 			<ul>
 				{% for post in site.posts %}
-				<li><a href="{{  post.url }}" title="{{ post.title }}"><img src="/assets/img/file.ico"
+				<li><a href="{{  post.url }}" title="{{ post.title }}"><img src="{{site.baseurl}}/assets/img/file.ico"
 							title="{{ post.title }}" />{{ post.title }}</a></li>
 				{% endfor %}
 			</ul>
@@ -40,7 +40,7 @@
 	{% if page.title %}
 	<div class="content">
 		<div class="post_title">
-			<img src="/assets/img/file.png" />
+			<img src="{{site.baseurl}}/assets/img/file.png" />
 			<h1>{{  page.title  }}</h1>
 			<a href="/">
 				<div class="btn"><span class="fa fa-times"></span></div>
@@ -59,8 +59,8 @@
 		</div>
 	</div>
 	{% endif %}
-	<script src="/assets/js/001.js"></script>
-	<script src="/assets/js/002.js"></script>
+	<script src="{{site.baseurl}}/assets/js/001.js"></script>
+	<script src="{{site.baseurl}}/assets/js/002.js"></script>
 	<div class="footer">
 		<p>Created by <a href="http://github.com/h01000110" target="_blank">h01000110 (hi)</a> | Code licensed under <a
 				href="https://github.com/h01000110/blob/master/LICENSE" target="_blank">MIT License</a></p>
